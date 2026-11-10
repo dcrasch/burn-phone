@@ -1,5 +1,7 @@
 # burn-phone
 
+This project uses burn 0.21 , maybe later upgrade to 0.22 because of breaking changes.
+
 A small [egui](https://github.com/emilk/egui) / `eframe` Android app built with
 [`cargo-apk`](https://github.com/rust-mobile/cargo-apk) (`android-activity` +
 `NativeActivity`).
