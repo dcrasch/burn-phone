@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108" role="img" aria-label="AI image classifier">
+
+  <defs>
+    <!-- background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"    stop-color="#6C4BFF"/>
+      <stop offset="0.55" stop-color="#7B5BFF"/>
+      <stop offset="1"    stop-color="#22C8F0"/>
+    </linearGradient>
+
+    <!-- photo sky -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9CC"/>
+      <stop offset="1" stop-color="#FFB59B"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="190%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4"
+                    flood-color="#1B1050" flood-opacity="0.28"/>
+    </filter>
+
+    <clipPath id="photo">
+      <rect x="30" y="34" width="48" height="40" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <!-- rounded app icon background -->
+  <rect width="108" height="108" rx="24" fill="url(#bg)"/>
+
+  <!-- photo card -->
+  <g filter="url(#shadow)">
+    <rect x="26" y="30" width="56" height="48" rx="10" fill="#FFFFFF"/>
+  </g>
+
+  <!-- image inside the card -->
+  <g clip-path="url(#photo)">
+    <rect x="30" y="34" width="48" height="40" fill="url(#sky)"/>
+    <circle cx="66" cy="45" r="5.5" fill="#FFC24B"/>
+    <path d="M18 74 L42 46 L58 66 L68 56 L90 74 Z" fill="#A78BFA"/>
+    <path d="M20 74 L43 53 L64 74 Z"              fill="#6C4BFF"/>
+  </g>
+
+  <!-- AI sparkle badge -->
+  <circle cx="79" cy="29" r="10.5" fill="#FFC24B"/>
+  <path transform="translate(79 29) scale(7)" fill="#3B1E9E"
+        d="M0 -1 C0.13 -0.4 0.4 -0.13 1 0
+           C0.4 0.13 0.13 0.4 0 1
+           C-0.13 0.4 -0.4 0.13 -1 0
+           C-0.4 -0.13 -0.13 -0.4 0 -1 Z"/>
+</svg>
